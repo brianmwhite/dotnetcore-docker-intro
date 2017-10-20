@@ -9,28 +9,19 @@ namespace DevopsEast.Controllers
         [HttpGet]
         public string Get()
         {
-            return GeneratePassword();
+            return GeneratePassword(4, Constants.WordList, ' ');
         }
 
-        private string GeneratePassword()
+        private string GeneratePassword(int numWords, string[] wordDictionary, char separator)
         {
-            int numberOfWords = Constants.WordList.Length;
-            int word1 = GetRandomNumberFromArray(numberOfWords);
-            int word2 = GetRandomNumberFromArray(numberOfWords);
-            int word3 = GetRandomNumberFromArray(numberOfWords);
-            int word4 = GetRandomNumberFromArray(numberOfWords);
-
-            return string.Format("{0} {1} {2} {3}",
-                Constants.WordList[word1],
-                Constants.WordList[word2],
-                Constants.WordList[word3],
-                Constants.WordList[word4]);
-        }
-
-        private int GetRandomNumberFromArray(int arrayLength)
-        {
-            Random r1 = new Random();
-            return r1.Next(0, arrayLength);
+            int dictionaryLength = wordDictionary.Length;
+            string passwordOutput = "";
+            for (int i = 0; i < numWords; i++)
+            {
+                int whichWord = new Random().Next(0, dictionaryLength);
+                passwordOutput += string.Format("{0}{1}", wordDictionary[whichWord], separator);
+            }
+            return passwordOutput.Trim();
         }
     }
 }
