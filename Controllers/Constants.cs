@@ -1,4 +1,4 @@
-namespace DevopsEast
+namespace d101
 {
     public static class Constants
     {

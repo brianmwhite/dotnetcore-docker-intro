@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DevopsEast.Controllers
+namespace d101.Controllers
 {
     [Route("api/[controller]")]
     public class PasswordController : Controller
