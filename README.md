@@ -1,8 +1,12 @@
+## Downloads ##
+
 Download the following installers:
 
 - [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
 - [.NET Core SDK](https://www.microsoft.com/net/core#macos)
 - [Visual Studio Code](https://code.visualstudio.com)
+
+## Working ahead ##
 
 If you are feeling ambitious, continue with the next steps
 - Install Docker (you don't need to create an account for this exercise)
@@ -14,3 +18,7 @@ docker pull microsoft/aspnetcore-build
 - Install .NET Core SDK
 
 Note: If you have any terminal windows open you may have to close them and reopen new ones so that the dotnet commands are added to your path.
+
+## Walk Through ##
+
+[Command Reference](command-reference.md)
