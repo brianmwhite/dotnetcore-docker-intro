@@ -1,5 +1,3 @@
-# Docker, .NET Core, macOS: An Unusual Introduction to Docker
-
 Download the following installers:
 
 - [Docker](https://store.docker.com/editions/community/docker-ce-desktop-mac)
@@ -7,8 +5,8 @@ Download the following installers:
 - [Visual Studio Code](https://code.visualstudio.com)
 
 If you are feeling ambitious, continue with the next steps
-- Install Docker (you don't need to create an account for this excercise)
-- Go to the terminal and run the following commands (these download official microsoft images that are fairly large so it's good to get a head start on them)
+- Install Docker (you don't need to create an account for this exercise)
+- Go to the terminal and run the following commands (these download official Microsoft images that are fairly large so it's good to get a head start on them)
 ```bash
 docker pull microsoft/aspnetcore
 docker pull microsoft/aspnetcore-build
