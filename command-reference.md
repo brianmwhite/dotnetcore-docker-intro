@@ -50,4 +50,12 @@ docker rmi <image>
 
 # remove unused data
 docker system prune
+
+# saving and loading images for offline use
+# examples
+docker save -o aspnetcore.docker microsoft/aspnetcore
+docker save -o aspnetcore-build.docker microsoft/aspnetcore-build
+
+docker load -i aspnetcore-build.docker
+docker load -i aspnetcore.docker
 ```
