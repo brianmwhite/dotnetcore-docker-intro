@@ -11,6 +11,11 @@ docker run microsoft/dotnet-samples:dotnetapp
 
 ## Project Steps ##
 ```bash
+# download this project (creates a directory named dotnetcore-docker-intro)
+git clone https://github.com/brianmwhite/dotnetcore-docker-intro
+# easily open a finder window
+open .
+
 # create a new webapi application
 mkdir d101
 cd d101
@@ -20,6 +25,9 @@ dotnet new webapi
 dotnet run
 # Go to: http://localhost:5000/api/values/
 # To stop: Ctrl-C
+
+# open a finder window
+open .
 #  ~~ now create new/edit / copy new files in ~~
 #  optional steps
 	dotnet restore
