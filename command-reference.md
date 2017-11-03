@@ -11,8 +11,13 @@ docker run microsoft/dotnet-samples:dotnetapp
 
 ## Project Steps ##
 ```bash
+# if you have git installed and are comfortable using it
 # download this project (creates a directory named dotnetcore-docker-intro)
 git clone https://github.com/brianmwhite/dotnetcore-docker-intro
+
+# if you don't have git, download from here and unzip/copy to a convenient directory
+https://github.com/brianmwhite/dotnetcore-docker-intro/archive/master.zip
+
 # easily open a finder window
 open .
 
