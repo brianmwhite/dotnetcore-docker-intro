@@ -1,10 +1,10 @@
 ## Optional Items to start ##
 ```bash
 # images used later
-docker pull microsoft/aspnetcore
-docker pull microsoft/aspnetcore-build
+docker pull microsoft/aspnetcore:2.0.0
+docker pull microsoft/aspnetcore-build:2.0.2
 
-# samples
+# other samples
 docker run hello-world
 docker run microsoft/dotnet-samples:dotnetapp
 ```
@@ -18,8 +18,13 @@ git clone https://github.com/brianmwhite/dotnetcore-docker-intro
 # if you don't have git, download from here and unzip/copy to a convenient directory
 https://github.com/brianmwhite/dotnetcore-docker-intro/archive/master.zip
 
+# go to the newly created directory
+cd dotnetcore-docker-intro/
+
 # easily open a finder window
 open .
+
+cd ..
 
 # create a new webapi application
 mkdir d101
@@ -66,8 +71,7 @@ docker system prune
 
 # saving and loading images for offline use
 # examples
-docker save -o aspnetcore.docker microsoft/aspnetcore
-docker save -o aspnetcore-build.docker microsoft/aspnetcore-build
+docker save -o aspnetcore.docker microsoft/aspnetcore:2.0.0; docker save -o aspnetcore-build.docker microsoft/aspnetcore-build:2.0.2
 
 docker load -i aspnetcore-build.docker
 docker load -i aspnetcore.docker

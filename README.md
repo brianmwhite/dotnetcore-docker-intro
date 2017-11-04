@@ -12,8 +12,8 @@ If you are feeling ambitious, continue with the next steps
 - Install Docker (you don't need to create an account for this exercise)
 - Go to the terminal and run the following commands (these download official Microsoft images that are fairly large so it's good to get a head start on them)
 ```bash
-docker pull microsoft/aspnetcore
-docker pull microsoft/aspnetcore-build
+docker pull microsoft/aspnetcore:2.0.0
+docker pull microsoft/aspnetcore-build:2.0.2
 ```
 - Install .NET Core SDK
 
