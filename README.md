@@ -17,8 +17,9 @@ We'll also touch on the .NET Core SDK and Visual Studio Code at the end, but tho
 If you are feeling ambitious, continue with the next steps. We'll walk through these in detail during the presentation but they do take some time to download and install. 
 - Install Docker (you don't need to create an account for this exercise)
 - Once docker is installed and running. Go to the terminal and run the following commands (these download official Microsoft images that are fairly large so it's good to get a head start on them)
+
+Note: these are two commands separated by a semi colon, they'll run sequentially
 ```bash
-#Note: these are two commands separated by a semi colon, they'll run sequentially
 docker pull microsoft/aspnetcore-build:2.0.2; docker pull microsoft/aspnetcore:2.0.0
 ```
 
