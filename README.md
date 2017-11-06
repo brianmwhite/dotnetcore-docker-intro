@@ -40,10 +40,10 @@ git clone https://github.com/brianmwhite/dotnetcore-docker-intro
 
 ### Walk through the files
 * Inspect the following files:
-  * [PasswordController](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/full-project/Controllers/PasswordController.cs)
-  * [Constants](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/full-project/Controllers/Constants.cs)
-  * [Dockerfile](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/full-project/Dockerfile)
-  * [.dockerignore](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/full-project/.dockerignore)
+  * [PasswordController](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/Controllers/PasswordController.cs)
+  * [Constants](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/Controllers/Constants.cs)
+  * [Dockerfile](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/Dockerfile)
+  * [.dockerignore](https://github.com/brianmwhite/dotnetcore-docker-intro/blob/master/.dockerignore)
 
 ### Open up a terminal window and navigate to ~/Documents (where these project files are installed)
 ```bash
