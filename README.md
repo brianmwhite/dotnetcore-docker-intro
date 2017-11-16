@@ -1,5 +1,3 @@
-Note: I have several USB flash drives with the installers and images on them. Feel free to borrow one, copy the files to your computer and share with someone else. 
-
 ## Downloads
 
 To get a head start on things, please download the Docker installer.
