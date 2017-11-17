@@ -15,13 +15,13 @@ namespace d101.Controllers
         private string GeneratePassword(int numWords, string[] wordDictionary, char separator)
         {
             int dictionaryLength = wordDictionary.Length;
-            string passwordOutput = "";
+            string[] passwordList = new string[numWords];
             for (int i = 0; i < numWords; i++)
             {
                 int whichWord = new Random().Next(0, dictionaryLength);
-                passwordOutput += string.Format("{0}{1}", wordDictionary[whichWord], separator);
+                passwordList[i] = (wordDictionary[whichWord]);
             }
-            return passwordOutput.Trim();
+            return string.Join(separator, passwordList);
         }
     }
 }
