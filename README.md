@@ -13,9 +13,12 @@ Optional
 - Install the .NET Core SDK
 - (Optionally) Install Visual Studio Code
 
-## Walk Through
-### Create A .NET Core Web Services Project (using .NET SDK) 
+## Watch the Demo Video 
+[![asciicast](https://asciinema.org/a/VO27WQZc6nOiWvhfA8FzDMVI0.png)](https://asciinema.org/a/VO27WQZc6nOiWvhfA8FzDMVI0)
 
+## Step-by-Step Walk Through
+
+### Create A .NET Core Web Services Project (using .NET SDK) 
 * first create a new directory
 ```bash
 mkdir d101
@@ -32,7 +35,9 @@ dotnet new webapi
 * run the project
 ```bash
 dotnet run
--- you can also use dotnet restore (to get dependencies) and dotnet build (to build the project). the run command does both of those as well.
+# you can also use dotnet restore (to get dependencies) 
+# and dotnet build (to build the project). 
+# the run command does both of those as well.
 ```
 * Go to: http://localhost:5000/api/values/
 * To stop: Ctrl-C
@@ -47,7 +52,8 @@ docker build -t d101 .
 ```
 * Run the docker image
 ```bash
-# --rm (run, press Ctrl-C to stop, the container automatically gets removed) or -d (run in the background)
+# --rm (run, press Ctrl-C to stop, the container automatically gets removed) 
+# or -d (run in the background)
 docker run --rm -p 8080:80 d101
 ```
 
